@@ -1,0 +1,83 @@
+/* o asterisco* seleciona todos os elementos do html*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#titulo{
+  font-family: sans-serif;
+  color: #4d158a;
+  margin-left: 1% /* margin left é o espaço em elação ao lado esquerdo*/
+}
+
+#subtitulo{
+  font-family: sans-serif;
+  color: #4d158a;
+  margin-left: 2.6%
+}
+
+body{
+  background: linear-gradient(90deg, #d3cae0, #d4bbfa);
+  font-family: sans-serif;
+  font-size: 1em; /*em é uma unidade de medida*/
+  color: #59429d;
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-right: 30%;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1400' height='2000' preserveAspectRatio='none' viewBox='0 0 1400 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1128%26quot%3b)' fill='none'%3e%3crect width='1400' height='2000' x='0' y='0' fill='rgba(203%2c 196%2c 227%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c463.124C93.474%2c448.645%2c194.725%2c477.855%2c275.97%2c429.417C358.153%2c380.419%2c384.683%2c279.045%2c439.862%2c200.878C510.074%2c101.415%2c647.432%2c29.045%2c644.518%2c-92.668C641.648%2c-212.532%2c523.11%2c-298.703%2c426.209%2c-369.312C342.341%2c-430.425%2c231.7%2c-423.056%2c136.009%2c-463.205C23.611%2c-510.364%2c-62.697%2c-640.925%2c-183.562%2c-625.153C-303.285%2c-609.53%2c-366.715%2c-477.509%2c-446.8%2c-387.154C-527.836%2c-295.727%2c-642.246%2c-215.649%2c-654.282%2c-94.072C-666.261%2c26.925%2c-563.606%2c123.861%2c-508.102%2c232.042C-455.496%2c334.575%2c-441.889%2c476.653%2c-336.987%2c524.362C-230.913%2c572.604%2c-115.156%2c480.961%2c0%2c463.124' fill='%239b8ec9'%3e%3c/path%3e%3cpath d='M1400 2929.032C1573.406 2931.618 1726.828 2829.1549999999997 1869.531 2730.605 2008.366 2634.727 2130.159 2518.57 2209.772 2369.81 2293.015 2214.268 2357.542 2040.557 2332.272 1865.96 2307.0119999999997 1691.432 2210.404 1526.98 2071.9719999999998 1417.733 1943.547 1316.383 1770.306 1308.2559999999999 1607.341 1293.8600000000001 1470.575 1281.779 1342.227 1320.024 1206.585 1341.288 1047.529 1366.222 873.418 1337.0140000000001 741.68 1429.563 597.47 1530.874 469.15099999999995 1688.951 461.101 1865.007 453.11800000000005 2039.59 615.429 2166.84 700.999 2319.223 778.212 2456.724 820.552 2613.064 939.384 2716.733 1069.414 2830.1710000000003 1227.462 2926.459 1400 2929.032' fill='%23fbfbfd'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1128'%3e%3crect width='1400' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+input, select, button, textarea{
+  border-radius: 5px;
+}
+
+.campo{
+  margin-bottom: 1em;
+}
+
+.campo label{
+  margin-bottom: 0.2em;
+  color: #594n9d;
+  display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+  padding: 0.2em
+  border: 1px solid #59429d;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4); /* é o sombreado no nome, sobrenome, email e experiencia*/
+  display: block;
+}
+
+.campo select opcion{
+  padding-rigth: 1em;
+}
+
+.botao{
+  fot-size:1.2em;
+  background: #59429d;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.6em 0.9em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  position: absolute;
+  top: %;
+  left: 70%;
+  cursor: pointer;
+}
+
+.botao:hover{ /*hover -> quando passar o mouse em cima do botao*/
+  background: #ccbbff;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+#check{
+  display: inline-block;
+}
+
+/* elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus" deixa a cor roxinha quando vc clica*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
