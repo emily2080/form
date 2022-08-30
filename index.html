@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lan='pt-br'>
+<head>
+<meta charset="UTF-8"/>
+<title>form</title>
+</head>
+  
+<body>
+  
+  <div class="campo">
+    <h1 id="titulo">Formulário de Pesquisa 📃</h1><br>
+    <h3 id="subtitulo">Preencha todos os campos abaixo!</h3>
+  </div>
+  
+  <form>
+    <class="grupo"><br>
+      <div class="campo">
+        <label for="name"><strong>Nome</strong></label>
+        <input type="text" name="Nome" id="Nome" required>
+      </div>
+      
+      <br>
+      
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="Sobrenome" id="Sobrenome" required>
+      </div>
+      
+      <br>
+      
+      <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" nome="email" id="email" required>
+      </div>
+    
+    <br>
+    
+    <div class="campo">
+      <label><strong>Qual é o seu estado civil?</strong></label><br>
+      <label>
+        <input type="radio" name="butaozin" value="Solteiro">Solteiro
+      </label>
+      
+      <label>
+        <input type="radio" name="butaozin" value="Casado">Casado
+      </label>
+      
+       <label>
+        <input type="radio" name="butaozin" value="Separado">Separado
+      </label>
+      
+      <label>
+        <input type="radio" name="butaozin" value="Divorciado">Divorciado
+      </label>
+      
+      <label>
+        <input type="radio" name="butaozin" value="Viuvo">Viúvo
+      </label>
+    </div>
+    
+    <br>
+    
+ <div class="campo">
+   <label for="cursos"><strong>Qual o seu curso técnico integrado no IFCE?</strong></label>
+   <select id="cursos" required>
+     <option selected disabled value="">Selecione</option>
+     <option>Edificações</option>
+     <option>Eletrotecnica</option>
+     <option>Informática</option>
+     <option>Química</option>
+     <option>Mecânica</option>
+     <option>Telecomunicações</option>
+    </select>
+ </div>
+    
+    <br>
+    
+    <div id="check">
+      <label><strong>Qual é a sua idade atualmente?</strong></label><br><br>
+      <input type="checkbox" id="opcao0" name="opcao0" value="15">
+      <label for="opcao1">15 anos</label>
+      <input type="checkbox" id="opcao1" name="opcao1" value="16">
+      <label for="opcao1">16 anos</label>
+      <input type="checkbox" id="opcao2" name="opcao2" value="17">
+      <label for="opcao1">17 anos</label>
+      <input type="checkbox" id="opcao3" name="opcao3" value="18">
+      <label for="opcao1">18 anos</label>
+      <input type="checkbox" id="opcao4" name="opcao4" value="19">
+      <label for="opcao1">19 anos</label>
+      <input type="checkbox" id="opcao5" name="opcao5" value="20">
+      <label for="opcao1">20 anos</label>
+    </div><br><br>
+
+  <div class="campo">
+    <label><strong>Conte um pouco da sua experiência como discente no Instituto:</strong></label><br>
+    <textarea rows="5" style="width:35em" id="texto" name="texto"></textarea>
+  </div><br>
+     </f>
+  </form>
+  
+  <br>
+  
+  <button class="botao" type="submit">Enviar</button>
+  
+  <br>
+</body>
+</html>
